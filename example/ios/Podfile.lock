@@ -1,0 +1,66 @@
+PODS:
+  - AppLovinSDK (13.0.1)
+  - AppsFlyerFramework (6.15.3):
+    - AppsFlyerFramework/Main (= 6.15.3)
+  - AppsFlyerFramework/Main (6.15.3)
+  - FBAEMKit (17.4.0):
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBSDKCoreKit (17.4.0):
+    - FBAEMKit (= 17.4.0)
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBSDKCoreKit_Basics (17.4.0)
+  - Flutter (1.0.0)
+  - GGOpenSDK (1.4.0)
+  - Google-Mobile-Ads-SDK (11.10.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleUserMessagingPlatform (2.7.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - test_plugins (0.0.1):
+    - AppLovinSDK (~> 13.0.0)
+    - AppsFlyerFramework (~> 6.15.3)
+    - FBSDKCoreKit (~> 17.4)
+    - Flutter
+    - GGOpenSDK (~> 1.4.0)
+    - Google-Mobile-Ads-SDK (~> 11.10.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - test_plugins (from `.symlinks/plugins/test_plugins/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AppLovinSDK
+    - AppsFlyerFramework
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - GGOpenSDK
+    - Google-Mobile-Ads-SDK
+    - GoogleUserMessagingPlatform
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  test_plugins:
+    :path: ".symlinks/plugins/test_plugins/ios"
+
+SPEC CHECKSUMS:
+  AppLovinSDK: fdae6a4361c9c9b09f8d7d18ede792368221d987
+  AppsFlyerFramework: ad7ff0d22aa36c7f8cc4f71a5424e19b89ccb8ae
+  FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
+  FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41
+  FBSDKCoreKit_Basics: 151b43db8b834d3f0e02f95d36a44ffd36265e45
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  GGOpenSDK: 65784fb9685b550c59245613da7d2218dc11f895
+  Google-Mobile-Ads-SDK: 13e6e98edfd78ad8d8a791edb927658cc260a56f
+  GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
+  test_plugins: cf57a4590f9ef5db4ee7c8ee1b36ee4cf31d840c
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.16.2
