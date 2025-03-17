@@ -1,4 +1,4 @@
-package com.example.ioioksdk_example;
+package com.example.flutter_ioioksdk_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

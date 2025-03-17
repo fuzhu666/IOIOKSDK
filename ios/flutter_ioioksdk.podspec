@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'ioioksdk'
+  s.name             = 'flutter_ioioksdk'
   s.version          = '0.0.1'
   s.summary          = 'flutter version of IOIOKSDK.'
   s.description      = <<-DESC

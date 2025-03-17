@@ -1,4 +1,4 @@
-package com.example.ioioksdk;
+package com.example.flutter_ioioksdk;
 
 import androidx.annotation.NonNull;
 
@@ -8,8 +8,8 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
-/** IoioksdkPlugin */
-public class IoioksdkPlugin implements FlutterPlugin, MethodCallHandler {
+/** FlutterIoioksdkPlugin */
+public class FlutterIoioksdkPlugin implements FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -18,7 +18,7 @@ public class IoioksdkPlugin implements FlutterPlugin, MethodCallHandler {
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "ioioksdk");
+    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "flutter_ioioksdk");
     channel.setMethodCallHandler(this);
   }
 

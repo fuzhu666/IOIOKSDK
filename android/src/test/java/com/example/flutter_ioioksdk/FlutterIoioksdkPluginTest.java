@@ -1,4 +1,4 @@
-package com.example.ioioksdk;
+package com.example.flutter_ioioksdk;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -15,10 +15,10 @@ import org.junit.Test;
  * you can run them directly from IDEs that support JUnit such as Android Studio.
  */
 
-public class IoioksdkPluginTest {
+public class FlutterIoioksdkPluginTest {
   @Test
   public void onMethodCall_getPlatformVersion_returnsExpectedValue() {
-    IoioksdkPlugin plugin = new IoioksdkPlugin();
+    FlutterIoioksdkPlugin plugin = new FlutterIoioksdkPlugin();
 
     final MethodCall call = new MethodCall("getPlatformVersion", null);
     MethodChannel.Result mockResult = mock(MethodChannel.Result.class);

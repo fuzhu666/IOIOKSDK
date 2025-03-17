@@ -1,4 +1,4 @@
-group = "com.example.ioioksdk"
+group = "com.example.flutter_ioioksdk"
 version = "1.0"
 
 buildscript {
@@ -23,7 +23,7 @@ apply plugin: "com.android.library"
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace = "com.example.ioioksdk"
+        namespace = "com.example.flutter_ioioksdk"
     }
 
     compileSdk = 34

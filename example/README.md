@@ -1,6 +1,6 @@
-# ioioksdk_example
+# flutter_ioioksdk_example
 
-Demonstrates how to use the ioioksdk plugin.
+Demonstrates how to use the flutter_ioioksdk plugin.
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
-name: ioioksdk
+name: flutter_ioioksdk
 description: "flutter version of IOIOKSDK."
 version: 0.0.1
 homepage: https://github.com/fuzhu666/IOIOKSDK
@@ -21,7 +21,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.ioioksdk
-        pluginClass: IoioksdkPlugin
+        package: com.example.flutter_ioioksdk
+        pluginClass: FlutterIoioksdkPlugin
       ios:
-        pluginClass: IoioksdkPlugin
+        pluginClass: FlutterIoioksdkPlugin

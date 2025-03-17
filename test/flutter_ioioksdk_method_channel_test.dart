@@ -1,12 +1,12 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ioioksdk/ioioksdk_method_channel.dart';
+import 'package:flutter_ioioksdk/flutter_ioioksdk_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  MethodChannelIoioksdk platform = MethodChannelIoioksdk();
-  const MethodChannel channel = MethodChannel('ioioksdk');
+  MethodChannelFlutterIoioksdk platform = MethodChannelFlutterIoioksdk();
+  const MethodChannel channel = MethodChannel('flutter_ioioksdk');
 
   setUp(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:ioioksdk/ioioksdk.dart';
+import 'package:flutter_ioioksdk/flutter_ioioksdk.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _ioioksdkPlugin = Ioioksdk();
+  final _flutterIoioksdkPlugin = FlutterIoioksdk();
 
   @override
   void initState() {
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await _ioioksdkPlugin.getPlatformVersion() ?? 'Unknown platform version';
+          await _flutterIoioksdkPlugin.getPlatformVersion() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
