@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'test_plugins_platform_interface.dart';
+import 'ioioksdk_platform_interface.dart';
 
-/// An implementation of [TestPluginsPlatform] that uses method channels.
-class MethodChannelTestPlugins extends TestPluginsPlatform {
+/// An implementation of [IoioksdkPlatform] that uses method channels.
+class MethodChannelIoioksdk extends IoioksdkPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('IOIOKSDK');
+  final methodChannel = const MethodChannel('ioioksdk');
 
   @override
   Future<String?> getPlatformVersion() async {

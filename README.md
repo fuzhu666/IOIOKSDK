@@ -1,4 +1,4 @@
-# test_plugins
+# ioioksdk
 
 A new Flutter plugin project.
 

@@ -1,4 +1,4 @@
-package com.example.test_plugins_example;
+package com.example.ioioksdk_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

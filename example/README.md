@@ -1,6 +1,6 @@
-# test_plugins_example
+# ioioksdk_example
 
-Demonstrates how to use the test_plugins plugin.
+Demonstrates how to use the ioioksdk plugin.
 
 ## Getting Started
 

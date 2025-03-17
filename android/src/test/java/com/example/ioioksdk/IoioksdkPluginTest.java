@@ -1,4 +1,4 @@
-package com.example.test_plugins;
+package com.example.ioioksdk;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -15,10 +15,10 @@ import org.junit.Test;
  * you can run them directly from IDEs that support JUnit such as Android Studio.
  */
 
-public class TestPluginsPluginTest {
+public class IoioksdkPluginTest {
   @Test
   public void onMethodCall_getPlatformVersion_returnsExpectedValue() {
-    TestPluginsPlugin plugin = new TestPluginsPlugin();
+    IoioksdkPlugin plugin = new IoioksdkPlugin();
 
     final MethodCall call = new MethodCall("getPlatformVersion", null);
     MethodChannel.Result mockResult = mock(MethodChannel.Result.class);

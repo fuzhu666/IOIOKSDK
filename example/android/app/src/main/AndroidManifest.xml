@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="test_plugins_example"
+        android:label="ioioksdk_example"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
