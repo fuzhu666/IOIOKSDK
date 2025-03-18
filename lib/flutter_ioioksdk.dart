@@ -1,4 +1,5 @@
 import 'package:flutter/services.dart';
+import 'package:flutter_ioioksdk/PageBannerAds.dart';
 
 class FlutterIoioksdk {
   static final instance = FlutterIoioksdk();
@@ -18,6 +19,8 @@ class FlutterIoioksdk {
       }
     });
   }
+
+  static const BannerAD = PagebannerAds;
 
   /// 初始化sdk
   static Future<bool> initSDK({
