@@ -1,10 +1,36 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_ioioksdk/flutter_ioioksdk.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutterIoioksdk.initSDK(
+    debug: kDebugMode ? true : false,
+    log: true,
+    appkey: '2070C514A61F6E658A4A525E',
+    appSecret: '88DC852208FE4DEFB6C1691001211268',
+    serverUrl: 'https://hrt.jinchuchi.com',
+    statUrl: 'https://jka.jinchuchi.com',
+    iosAppId: '6740135195',
+    umkAppid: '1097563993230311424',
+    afDevKey: 'RfXDEDH92Sp4sYkR7kdvo3',
+    videoUnitId: '',
+    insUnitId: '',
+    openUnitId: 'ca-app-pub-3940256099942544/5575463023',
+    bannerUnitId: ''
+  );
+
+  print('cnmcnm');
+
+  Future.delayed(Duration(seconds: 5), () {
+    FlutterIoioksdk.showOpenAd((args) {
+      print('openAd: $args');
+    });
+  });
+
   runApp(const MyApp());
 }
 
