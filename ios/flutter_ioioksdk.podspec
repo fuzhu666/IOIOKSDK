@@ -12,7 +12,7 @@ flutter version of IOIOKSDK.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.platform = :ios, '12.0'
+  s.platform = :ios, '13.0'
   s.vendored_frameworks = 'Framework/*'
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
