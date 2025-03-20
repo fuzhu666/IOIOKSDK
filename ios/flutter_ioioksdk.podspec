@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'flutter_ioioksdk'
-  s.version          = '0.0.1'
+  s.version          = '0.0.0'
   s.summary          = 'flutter version of IOIOKSDK.'
   s.description      = <<-DESC
 flutter version of IOIOKSDK.
@@ -25,5 +25,20 @@ flutter version of IOIOKSDK.
   s.dependency 'AppsFlyerFramework', '~> 6.15.3'
   s.dependency 'FBSDKCoreKit', '~> 17.4'
   s.dependency 'AppLovinSDK', '~> 13.0.0'
+  
+  s.dependency 'AppLovinMediationVungleAdapter', '~> 7.4.1.1' # vungle
+  s.dependency 'AppLovinMediationUnityAdsAdapter', '~> 4.12.3.0' # unityads
+  s.dependency 'AppLovinMediationIronSourceAdapter', '~> 8.3.0.0.1' # ironSource
+  s.dependency 'AppLovinMediationMintegralAdapter', '~> 7.7.2.0.1' # mintegral
+  s.dependency 'AppLovinMediationByteDanceAdapter', '~> 6.2.0.7.2' # pangle
+  s.dependency 'AppLovinMediationBigoAdsAdapter', '~> 4.5.1.0' # bigo
+
+  
+  # pod 'AppLovinMediationVungleAdapter','7.4.1.1'
+  # pod 'AppLovinMediationUnityAdsAdapter','4.12.3.0'
+  # pod 'AppLovinMediationIronSourceAdapter','8.3.0.0.1'
+  # pod 'AppLovinMediationMintegralAdapter','7.7.2.0.1'
+  # pod 'AppLovinMediationByteDanceAdapter','6.2.0.7.2'
+  # pod 'AppLovinMediationBigoAdsAdapter','4.5.1.0'
 
 end

@@ -51,11 +51,6 @@ class _PagebannerAds extends State<PagebannerAds> {
       child: Container(
         height: mHeight,
         width: mWidth,
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: Colors.grey.shade100,
-          )
-        ),
         child: getBanner(width: mWidth, height: mHeight)
       ));
   }

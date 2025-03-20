@@ -28,6 +28,7 @@ class FlutterIoioksdk {
     required String appSecret,
     required String serverUrl,
     required String statUrl,
+    required String maxAppKey,
     bool debug = false,
     bool log = false,
     String? iosAppId,
@@ -36,6 +37,7 @@ class FlutterIoioksdk {
     String? videoUnitId,
     String? insUnitId,
     String? openUnitId,
+    String? admobOpenUnitId,
     String? bannerUnitId,
     String? nativeUnitId,
     String? smallNativeUnitId
@@ -45,6 +47,7 @@ class FlutterIoioksdk {
       'appSecret': appSecret,
       'serverUrl': serverUrl,
       'statUrl': statUrl,
+      'maxAppKey': maxAppKey,
       'debug': debug,
       'log': log,
       'iosAppId': iosAppId,
@@ -53,6 +56,7 @@ class FlutterIoioksdk {
       'videoUnitId': videoUnitId,
       'insUnitId': insUnitId,
       'openUnitId': openUnitId,
+      'admobOpenUnitId': admobOpenUnitId,
       'nativeUnitId': nativeUnitId,
       'smallNativeUnitId': smallNativeUnitId,
       'bannerUnitId': bannerUnitId

@@ -18,12 +18,14 @@ func initSDK(view: UIViewController, args: Any!) async -> Bool {
     SdkConfigInstance.setServerUrl(mArgs["serverUrl"] as? String);
     SdkConfigInstance.setVideoUnitId(mArgs["videoUnitId"] as? String);
     SdkConfigInstance.setInsUnitId(mArgs["insUnitId"] as? String);
-    SdkConfigInstance.setAdmobOpenUnitId(mArgs["openUnitId"] as? String);
+    SdkConfigInstance.setOpenUnitId(mArgs["openUnitId"] as? String);
+    SdkConfigInstance.setAdmobOpenUnitId(mArgs["admobOpenUnitId"] as? String);
     SdkConfigInstance.setNativeUnitId(mArgs["nativeUnitId"] as? String);
     SdkConfigInstance.setSmallNativeUnitId(mArgs["smallNativeUnitId"] as? String);
     SdkConfigInstance.setBannerUnitId(mArgs["bannerUnitId"] as? String)
     SdkConfigInstance.setBannerInlineUnitId(mArgs["bannerUnitId"] as? String)
     SdkConfigInstance.setBannerCollapsibleUnitId(mArgs["bannerUnitId"] as? String)
+    SdkConfigInstance.setMaxAppKey(mArgs["maxAppKey"] as? String)
     SdkInstance.initWithCompletion({ isInit, userInfo in
       resole.resume(returning: isInit)
     }, andUIViewCtrl: view)
@@ -34,7 +36,7 @@ func initSDK(view: UIViewController, args: Any!) async -> Bool {
 func showOpenAd(channel: FlutterMethodChannel, args: Any!) {
   let mArgs = args as! [String: Any];
   SdkInstance.showOpenAd(
-    withSceneId: SdkConfigInstance.admobOpenUnitId,
+    withSceneId: SdkConfigInstance.openUnitId,
     didHide: {
       adUnitId in channel.invokeMethod("onCallback", arguments: ["id": mArgs["id"], "args": ["type": "close"] ])
     },

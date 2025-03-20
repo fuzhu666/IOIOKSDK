@@ -2,6 +2,7 @@ import Flutter
 import Foundation
 import GoogleMobileAds
 import IOIOKSDK;
+import AppLovinSDK
 
 // 组件构造
 class IOIOKConfigBannerView: NSObject, FlutterPlatformView {
@@ -15,20 +16,19 @@ class IOIOKConfigBannerView: NSObject, FlutterPlatformView {
     self.viewId = viewID;
     self.messenger = binaryMessenger;
     self.params = args as? NSDictionary
-  }  
+  }
   
 
   func view() -> UIView {
     let mHeight = params?.value(forKey: "height") as? Double
     let mWidth = params?.value(forKey: "width") as? Double
-//    let mBannerType = params?.value(forKey: "type") as? String
-    
-    print(params?.value(forKey: "height") as? Double)
-    print(params?.value(forKey: "width") as? Double)
-    let mAdSize = GADAdSize()
-    let mBannerView = GADBannerView(adSize: GADInlineAdaptiveBannerAdSizeWithWidthAndMaxHeight(mWidth!, mHeight!))
-    mBannerView.adUnitID = IOIOKConfig.getInstance().bannerUnitId
-    mBannerView.load(GADRequest())
+    let mBannerView = UIView(frame: CGRect(x: 0, y: 0, width: mWidth ?? 350, height: mHeight ?? 50))
+    let adView = MAAdView(adUnitIdentifier: IOIOKConfig.getInstance().bannerUnitId)
+    adView.setLocalExtraParameterForKey("adaptive_banner_type", value: "inline")
+    adView.backgroundColor = .clear
+    adView.frame = CGRect(x: 0, y: 0, width: mWidth ?? 350, height: mHeight ?? 50)
+    mBannerView.addSubview(adView)
+    adView.loadAd()
     return mBannerView
   }
 }
