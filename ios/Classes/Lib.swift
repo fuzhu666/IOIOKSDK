@@ -27,7 +27,20 @@ func initSDK(view: UIViewController, args: Any!) async -> Bool {
     SdkConfigInstance.setBannerCollapsibleUnitId(mArgs["bannerUnitId"] as? String)
     SdkConfigInstance.setMaxAppKey(mArgs["maxAppKey"] as? String)
     SdkInstance.initWithCompletion({ isInit, userInfo in
-      resole.resume(returning: isInit)
+        DispatchQueue.global(qos: .background).async {
+            // 阻塞请求，等待广告加载完毕
+            while(true) {
+                if (SdkInstance.isOpenAdReady() == true) {
+                    break
+                }
+                sleep(1)
+            }
+            
+            // 回到主线程更新UI
+            DispatchQueue.main.async {
+                resole.resume(returning: isInit)
+            }
+        }
     }, andUIViewCtrl: view)
   }
   
